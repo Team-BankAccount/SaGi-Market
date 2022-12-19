@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "143156954788",
+    "project_id": "sagi-market-84267",
+    "storage_bucket": "sagi-market-84267.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143156954788:android:f71c41b748aa5dc3c84831",
+        "android_client_info": {
+          "package_name": "com.bankaccount.sagi_market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143156954788-ue92nbvnabbrne0tipnbfmd0hm3i5n0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEwTaZn_4KM7-hYMgSHTYcbl7PrHj5RD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143156954788-ue92nbvnabbrne0tipnbfmd0hm3i5n0q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

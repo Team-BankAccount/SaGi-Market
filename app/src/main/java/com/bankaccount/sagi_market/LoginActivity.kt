@@ -6,7 +6,7 @@ import com.bankaccount.sagi_market.databinding.LoginActivityBinding
 class LoginActivity : BaseActivity<LoginActivityBinding>(R.layout.login_activity) {
 
     override fun viewSetting() {
-        
+
     }
 
 }

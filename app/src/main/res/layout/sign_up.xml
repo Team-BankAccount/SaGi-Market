@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.125"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.41"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.486"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.562"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.638"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.714"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g13"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.770"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g15"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.801"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g7"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.254"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g8"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.174"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g9"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.195"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g10"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.746"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g11"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.826"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g12"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.805"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g14"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.63"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g7"
+        app:layout_constraintTop_toTopOf="@id/g1"
+        app:layout_constraintEnd_toEndOf="@id/g10"
+        app:layout_constraintBottom_toBottomOf="@id/g2"
+        android:background="@drawable/sg"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g8"
+        app:layout_constraintEnd_toEndOf="@id/g11"
+        app:layout_constraintTop_toBottomOf="@id/g2"
+        app:layout_constraintBottom_toBottomOf="@id/g3"
+        android:hint="이름"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g8"
+        app:layout_constraintEnd_toEndOf="@id/g11"
+        app:layout_constraintTop_toBottomOf="@id/g3"
+        app:layout_constraintBottom_toBottomOf="@id/g4"
+        android:hint="이메일"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g8"
+        app:layout_constraintEnd_toEndOf="@id/g11"
+        app:layout_constraintTop_toBottomOf="@id/g4"
+        app:layout_constraintBottom_toBottomOf="@id/g5"
+        android:hint="비밀번호"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g8"
+        app:layout_constraintEnd_toEndOf="@id/g11"
+        app:layout_constraintTop_toBottomOf="@id/g5"
+        app:layout_constraintBottom_toBottomOf="@id/g6"
+        android:hint="비밀번호 확인"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g8"
+        app:layout_constraintEnd_toEndOf="@id/g11"
+        app:layout_constraintTop_toBottomOf="@id/g6"
+        app:layout_constraintBottom_toBottomOf="@id/g13"
+        android:background="#3e3f42"
+        android:text="가입하기"
+        android:textColor="#ffffff"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g9"
+        app:layout_constraintEnd_toEndOf="@id/g14"
+        app:layout_constraintTop_toBottomOf="@id/g13"
+        app:layout_constraintBottom_toBottomOf="@id/g15"
+        android:text="회원가입이 되어있으신가요?" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g14"
+        app:layout_constraintEnd_toEndOf="@id/g12"
+        app:layout_constraintTop_toBottomOf="@id/g13"
+        app:layout_constraintBottom_toBottomOf="@id/g15"
+        android:text="로그인하기"
+        android:textColor="#002b5b"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

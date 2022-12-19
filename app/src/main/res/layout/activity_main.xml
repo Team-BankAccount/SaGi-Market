@@ -29,7 +29,7 @@
         android:layout_below="@id/edit_email"
         android:layout_centerHorizontal="true"
         android:hint="password"/>
-    
+
     <Button
         android:id="@+id/btn_Login"
         android:layout_width="250dp"
@@ -62,5 +62,5 @@
             android:text=" | 비밀번호 찾기"/>
 
     </LinearLayout>
-
 </RelativeLayout>
+

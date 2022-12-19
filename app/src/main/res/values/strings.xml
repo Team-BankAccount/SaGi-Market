@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">SaGi-Market</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login_k">로그인</string>
     <string name="register_k">SG마켓 회원가입</string>
     <string name="find_password_k">비밀번호 찾기</string>
+    <string name="app_name">SaGi-Market</string>
+    <string name="name_k">이름</string>
+    <string name="email_k">이메일</string>
+    <string name="password_k">비밀번호</string>
+    <string name="password_check_k">비밀번호 확인</string>
+    <string name="register_k_">가입하기</string>
+    <string name="register_ask">회원가입이 되어있으신가요? </string>
+    <string name="login_k_">로그인 하기</string>
 </resources>

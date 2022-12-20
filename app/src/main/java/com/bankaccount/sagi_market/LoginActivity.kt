@@ -1,9 +1,9 @@
 package com.bankaccount.sagi_market
 
 import com.bankaccount.sagi_market.base.BaseActivity
-import com.bankaccount.sagi_market.databinding.LoginActivityBinding
+import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
 
-class LoginActivity : BaseActivity<LoginActivityBinding>(R.layout.activity_login) {
+class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
 
     override fun viewSetting() {
 

@@ -2,12 +2,12 @@ package com.bankaccount.sagi_market
 
 import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
-import com.bankaccount.sagi_market.databinding.LoginActivityBinding
+import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class LoginActivity : BaseActivity<LoginActivityBinding>(R.layout.activity_login) {
+class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
 
     private lateinit var auth: FirebaseAuth
 

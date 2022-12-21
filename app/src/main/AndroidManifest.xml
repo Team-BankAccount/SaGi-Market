@@ -31,6 +31,9 @@
 
         </activity>
         <activity
+            android:name=".FindPasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
     </application>

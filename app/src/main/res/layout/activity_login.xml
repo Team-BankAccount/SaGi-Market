@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="login"
+            type="com.bankaccount.sagi_market.LoginActivity" />
 
     </data>
 
@@ -167,18 +170,21 @@
             app:layout_constraintEnd_toEndOf="@id/g_email_e" />
 
         <TextView
+            android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_k"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textColor="#002C5C"
+            android:onClick="@{login::onClickPageBtn}"
             app:layout_constraintTop_toTopOf="@id/g_tv_register_t"
             app:layout_constraintBottom_toBottomOf="@id/g__tv_register_b"
             app:layout_constraintStart_toStartOf="@id/g_rogo_s"
             app:layout_constraintEnd_toEndOf="@id/g_tv_register_e" />
 
         <TextView
+            android:id="@+id/tv_find_password"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:text="@string/find_password_k"

@@ -1,5 +1,6 @@
 package com.bankaccount.sagi_market
 
+import android.content.Intent
 import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
@@ -23,6 +24,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this,"Login Success",Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this,MainActivity::class.java)
                     } else {
                         Toast.makeText(this,"Login Failled",Toast.LENGTH_SHORT).show()
                     }

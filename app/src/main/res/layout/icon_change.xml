@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imgs_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.863"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imgs_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.896"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.072"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.145"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/jjim_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.264"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/jjim_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.336"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/uprode_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.909"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/uprode_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.45"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/uprode_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.55"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/chat_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.648"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/chat_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.72"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mypage_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.842"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mypage_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.915"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/home_s"
+        app:layout_constraintTop_toTopOf="@id/imgs_t"
+        app:layout_constraintBottom_toBottomOf="@id/imgs_b"
+        app:layout_constraintEnd_toEndOf="@id/home_e"
+        android:background="@drawable/homeicon"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/jjim_s"
+        app:layout_constraintTop_toTopOf="@id/imgs_t"
+        app:layout_constraintBottom_toBottomOf="@id/imgs_b"
+        app:layout_constraintEnd_toEndOf="@id/jjim_e"
+        android:background="@drawable/jjimicon"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/uprode_s"
+        app:layout_constraintTop_toTopOf="@id/imgs_t"
+        app:layout_constraintBottom_toBottomOf="@id/uprode_b"
+        app:layout_constraintEnd_toEndOf="@id/uprode_e"
+        android:background="@drawable/uprodeicon"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/chat_s"
+        app:layout_constraintTop_toTopOf="@id/imgs_t"
+        app:layout_constraintBottom_toBottomOf="@id/imgs_b"
+        app:layout_constraintEnd_toEndOf="@id/chat_e"
+        android:background="@drawable/chattingicon"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/mypage_s"
+        app:layout_constraintTop_toTopOf="@id/imgs_t"
+        app:layout_constraintBottom_toBottomOf="@id/imgs_b"
+        app:layout_constraintEnd_toEndOf="@id/mypage_e"
+        android:background="@drawable/mypageicon"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

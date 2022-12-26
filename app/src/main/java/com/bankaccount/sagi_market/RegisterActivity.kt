@@ -5,6 +5,9 @@ import android.util.Patterns
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
 class RegisterActivity : BaseActivity<ActivityRegisterBinding>(R.layout.activity_register) {
@@ -20,11 +23,13 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>(R.layout.activity
     }
 
     private fun register(){
+        val name = binding.etName.text.toString()
         val email = binding.etEmail.text.toString()
         val password = binding.etPassword.text.toString()
         if(isValidEmail(email) && isValidPassword(password) && passwordCheck(password)){
-            createUser(email, password)
+            createUser(email, password, name)
         }
+
     }
 
     private fun isValidEmail(email: String): Boolean{
@@ -60,19 +65,37 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>(R.layout.activity
         }
     }
 
-    private fun createUser(email: String, password: String){
+    private fun createUser(email: String, password: String, name: String){
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                     result ->
                 if(result.isSuccessful){
                     shortToast("회원가입이 되었습니다.")
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                    finish()
+                    saveUserData(email, password, name)
                 }
                 else{
                     shortToast("화원가입 실패")
                 }
             }
+    }
+
+    private fun saveUserData(email: String, password: String, name: String){
+
+        val emailId = email.split("@")[0]
+        val currentUserDB = Firebase.database.getReference("user")
+        val user = mutableMapOf<String?, Any>(emailId to "")
+        currentUserDB.updateChildren(user)
+        val userEmail = mutableMapOf<String, Any>()
+        val userName = mutableMapOf<String, Any>()
+        val userPassword = mutableMapOf<String, Any>()
+        userEmail["email"] = email
+        userName["name"] = name
+        userPassword["password"] = password
+        currentUserDB.child(emailId).updateChildren(userEmail)
+        currentUserDB.child(emailId).updateChildren(userName)
+        currentUserDB.child(emailId).updateChildren(userPassword)
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

@@ -133,8 +133,8 @@
             android:id="@+id/rccr_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.837"
-            android:orientation="horizontal" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.84" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/view3_b"
@@ -455,10 +455,11 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/rccr_t"
+            android:background="#002c5c"
             app:layout_constraintBottom_toBottomOf="@id/rccr_b"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rccr_t" />
 
         <View
             android:layout_width="0dp"

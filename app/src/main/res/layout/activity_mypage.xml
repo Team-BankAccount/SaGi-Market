@@ -57,84 +57,315 @@
         android:id="@+id/view1_t"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.061"
+        app:layout_constraintGuide_percent="0.059"
         android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/view1_b"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.063"
+        app:layout_constraintGuide_percent="0.061"
         android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/ment_t"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.442"
+        app:layout_constraintGuide_percent="0.08"
         android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/ment_b"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.477"
+        app:layout_constraintGuide_percent="0.114"
         android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/ment_s"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.217"
+        app:layout_constraintGuide_percent="0.111"
         android:orientation="vertical"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/ment_e"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.783"
-        android:orientation="vertical"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/button_t"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.509"
-        android:orientation="horizontal"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/button_b"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.545"
-        android:orientation="horizontal"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/button_s"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.272"
-        android:orientation="vertical"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/button_e"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.728"
+        app:layout_constraintGuide_percent="0.889"
         android:orientation="vertical"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/view2_t"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.842"
+        app:layout_constraintGuide_percent="0.131"
         android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/view2_b"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.844"
+        app:layout_constraintGuide_percent="0.132"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profil_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.142"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profil_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.255"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profil_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.052"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profil_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.298"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/user_name_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.158"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/user_name_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.195"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/user_name_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.352"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/user_name_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.594"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/setting_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.187"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/setting_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.885"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/setting_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view3_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.267"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view3_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.268"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/my_activity_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.286"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/my_activity_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.32"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/my_activity_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.035"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/my_activity_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.255"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sale_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.34"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sale_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.375"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/img_activitys_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.13"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/txt_activitys_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.178"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/txt_activitys_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.361"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/purchase_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.396"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/purchase_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.432"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/review_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.45"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/review_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.486"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/t_review_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.464"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view4_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view4_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.501"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sg_lv_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.516"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sg_lv_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.55"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sg_lv_s"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.035"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sg_lv_e"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.411"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view5_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.739"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view5_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.74"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view6_t"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.842"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view6_b"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintGuide_percent="0.843"
         android:orientation="horizontal"/>
 
     <androidx.constraintlayout.widget.Guideline
@@ -332,24 +563,11 @@
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/ment_s"
         app:layout_constraintTop_toTopOf="@id/ment_t"
-        app:layout_constraintEnd_toEndOf="@id/ment_e"
         app:layout_constraintBottom_toBottomOf="@id/ment_b"
-        android:text="채팅을 하지 않았어요"
+        app:layout_constraintEnd_toEndOf="@id/ment_e"
+        android:text="지금까지 3번의 SG거래를 했어요!"
+        android:textSize="20sp"
         android:textColor="@color/black"
-        android:textSize="22.5dp"
-        android:gravity="center"/>
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/button_s"
-        app:layout_constraintTop_toTopOf="@id/button_t"
-        app:layout_constraintBottom_toBottomOf="@id/button_b"
-        app:layout_constraintEnd_toEndOf="@id/button_e"
-        android:background="#051c35"
-        android:text="물품 구경하러 가기"
-        android:textColor="@color/white"
-        android:textSize="15sp"
         android:gravity="center"/>
 
     <View
@@ -359,6 +577,156 @@
         app:layout_constraintTop_toTopOf="@id/view2_t"
         app:layout_constraintBottom_toBottomOf="@id/view2_b"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/profil_s"
+        app:layout_constraintTop_toTopOf="@id/profil_t"
+        app:layout_constraintBottom_toBottomOf="@id/profil_b"
+        app:layout_constraintEnd_toEndOf="@id/profil_e"
+        android:background="@drawable/image_view"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/user_name_s"
+        app:layout_constraintTop_toTopOf="@id/user_name_t"
+        app:layout_constraintEnd_toEndOf="@id/user_name_e"
+        app:layout_constraintBottom_toBottomOf="@id/user_name_b"
+        android:text="사용자 이름"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/setting_s"
+        app:layout_constraintTop_toTopOf="@id/user_name_t"
+        app:layout_constraintBottom_toBottomOf="@id/setting_b"
+        app:layout_constraintEnd_toEndOf="@id/setting_e"
+        android:background="@drawable/setting" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view3_t"
+        app:layout_constraintBottom_toBottomOf="@id/view3_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/my_activity_s"
+        app:layout_constraintTop_toTopOf="@id/my_activity_t"
+        app:layout_constraintBottom_toBottomOf="@id/my_activity_b"
+        app:layout_constraintEnd_toEndOf="@id/my_activity_e"
+        android:text="나의 활동"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/profil_s"
+        app:layout_constraintTop_toTopOf="@id/sale_t"
+        app:layout_constraintEnd_toEndOf="@id/img_activitys_e"
+        app:layout_constraintBottom_toBottomOf="@id/sale_b"
+        android:background="@drawable/sale"/>
+    
+    <TextView
+        android:layout_width="65.5dp"
+        android:layout_height="27.5dp"
+        app:layout_constraintStart_toStartOf="@id/txt_activitys_s"
+        app:layout_constraintTop_toTopOf="@id/sale_t"
+        app:layout_constraintBottom_toBottomOf="@id/sale_b"
+        app:layout_constraintEnd_toEndOf="@id/txt_activitys_e"
+        android:text="판매내역"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/profil_s"
+        app:layout_constraintTop_toTopOf="@id/purchase_t"
+        app:layout_constraintBottom_toBottomOf="@id/purchase_b"
+        app:layout_constraintEnd_toEndOf="@id/img_activitys_e"
+        android:background="@drawable/purchase"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/txt_activitys_s"
+        app:layout_constraintTop_toTopOf="@id/purchase_t"
+        app:layout_constraintBottom_toBottomOf="@id/purchase_b"
+        app:layout_constraintEnd_toEndOf="@id/txt_activitys_e"
+        android:text="구매내역"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/profil_s"
+        app:layout_constraintTop_toTopOf="@id/review_t"
+        app:layout_constraintBottom_toBottomOf="@id/review_b"
+        app:layout_constraintEnd_toEndOf="@id/img_activitys_e"
+        android:background="@drawable/review"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/txt_activitys_s"
+        app:layout_constraintTop_toTopOf="@id/review_t"
+        app:layout_constraintBottom_toBottomOf="@id/review_b"
+        app:layout_constraintEnd_toEndOf="@id/t_review_e"
+        android:text="후기 작성하기"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view4_t"
+        app:layout_constraintBottom_toBottomOf="@id/view4_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black"/>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/sg_lv_s"
+        app:layout_constraintTop_toTopOf="@id/sg_lv_t"
+        app:layout_constraintBottom_toBottomOf="@id/sg_lv_b"
+        app:layout_constraintEnd_toEndOf="@id/sg_lv_e"
+        android:text="나의 SG등급은?"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view5_t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/view5_b"
+        android:background="@color/black"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view6_t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/view6_b"
         android:background="@color/black"/>
 
     <ImageView

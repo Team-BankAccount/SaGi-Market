@@ -12,4 +12,5 @@
     <string name="register_k_">가입하기</string>
     <string name="register_ask">회원가입이 되어있으신가요? </string>
     <string name="login_k_">로그인 하기</string>
+    <string name="confirm_k">확인</string>
 </resources>

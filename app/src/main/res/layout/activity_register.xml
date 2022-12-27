@@ -18,42 +18,36 @@
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.096" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_name_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.35" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_email_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.431" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_password_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.509" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_password_check_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.589" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_btn_register_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.658" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_ask_t"
             android:layout_width="match_parent"
@@ -67,42 +61,36 @@
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.328" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_name_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.405" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_email_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.477" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_password_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.555" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_password_check_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.635" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_btn_register_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.704" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_ask_b"
             android:layout_width="match_parent"
@@ -116,14 +104,12 @@
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.269" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_s"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.152" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_ask_s"
             android:layout_width="match_parent"
@@ -137,21 +123,18 @@
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.731" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_et_e"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.848" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_ask_e"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.61" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_login_e"
             android:layout_width="match_parent"

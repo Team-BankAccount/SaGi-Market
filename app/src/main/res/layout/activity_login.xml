@@ -21,28 +21,24 @@
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.187" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_email_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.454" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_password_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.528" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_login_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.601" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_register_t"
             android:layout_width="match_parent"
@@ -56,28 +52,24 @@
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.419" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_email_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_password_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.574" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_login_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.649" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g__tv_register_b"
             android:layout_width="match_parent"
@@ -91,7 +83,6 @@
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.267" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_email_s"
             android:layout_width="match_parent"
@@ -105,14 +96,12 @@
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.727" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_email_e"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.847" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/g_tv_register_e"
             android:layout_width="match_parent"
@@ -142,7 +131,6 @@
             app:layout_constraintBottom_toBottomOf="@id/g_email_b"
             app:layout_constraintStart_toStartOf="@id/g_email_s"
             app:layout_constraintEnd_toEndOf="@id/g_email_e" />
-
         <EditText
             android:id="@+id/et_password"
             android:layout_width="0dp"
@@ -182,7 +170,6 @@
             app:layout_constraintBottom_toBottomOf="@id/g__tv_register_b"
             app:layout_constraintStart_toStartOf="@id/g_rogo_s"
             app:layout_constraintEnd_toEndOf="@id/g_tv_register_e" />
-
         <TextView
             android:id="@+id/tv_find_password"
             android:layout_width="0dp"
@@ -192,6 +179,7 @@
             android:textStyle="bold"
             android:textColor="#002C5C"
             android:gravity="end"
+            android:onClick="@{login::onClickPageBtn}"
             app:layout_constraintTop_toTopOf="@id/g_tv_register_t"
             app:layout_constraintBottom_toBottomOf="@id/g__tv_register_b"
             app:layout_constraintStart_toStartOf="@id/g_tv_register_e"

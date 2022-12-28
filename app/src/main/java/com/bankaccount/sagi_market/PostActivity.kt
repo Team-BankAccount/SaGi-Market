@@ -1,26 +1,21 @@
 package com.bankaccount.sagi_market
 
-import Post.PostModel
-import Util.FirebaseAuth
-import Util.FirebaseRef
+import post.PostModel
+import util.FirebaseAuth
+import util.FirebaseRef
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityPostBinding
-import com.bankaccount.sagi_market.databinding.ActivityRegisterBinding
-import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import java.io.ByteArrayOutputStream
-import java.util.jar.Manifest
 
 class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
 

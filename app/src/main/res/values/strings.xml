@@ -17,4 +17,6 @@
     <string name="not_purchase">구매한 상품이 없어요</string>
     <string name="have_purchase">내가 구매한 상품이에요</string>
     <string name="btn_review">후기작성하기</string>
+    <string name="btn_modify">수정하기</string>
+    <string name="btn_finish">완료</string>
 </resources>

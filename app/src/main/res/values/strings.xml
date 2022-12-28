@@ -12,6 +12,7 @@
     <string name="register_k_">가입하기</string>
     <string name="register_ask">회원가입이 되어있으신가요? </string>
     <string name="login_k_">로그인 하기</string>
+    <string name="confirm_k">확인</string>
     <string name="go_uprode">게시물 등록하러 가기</string>
     <string name="not_purchase">구매한 상품이 없어요</string>
     <string name="have_purchase">내가 구매한 상품이에요</string>

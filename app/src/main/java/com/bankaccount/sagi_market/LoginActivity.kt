@@ -2,7 +2,6 @@ package com.bankaccount.sagi_market
 
 import android.content.Intent
 import android.view.View
-import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -17,22 +16,34 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
         binding.login = this
 
         auth = Firebase.auth
+        val email = binding.etEmail.text.toString()
+        val password = binding.etPassword.text.toString()
 
         binding.btnLogin.setOnClickListener {
-            val email = binding.etEmail.text.toString()
-            val password = binding.etPassword.text.toString()
-
-            auth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        Toast.makeText(this,"Login Success",Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this,MainActivity::class.java)
-                    } else {
-                        Toast.makeText(this,"Login Failled",Toast.LENGTH_SHORT).show()
-                    }
-                }
+            if(email.isEmpty()) {
+                shortToast("이메일을 입력해 주세요")
+            } else if(password.isEmpty()){
+                shortToast("비밀번호를 입력해 주세요")
+            } else{
+                login(email, password)
+            }
         }
     }
+
+    private fun login(email: String, password: String){
+
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    val intent = Intent(this,MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    shortToast("로그인에 실패했습니다.")
+                }
+            }
+    }
+
 
     fun onClickPageBtn(view: View){
         lateinit var act: Class<*>
@@ -46,7 +57,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
         }
         val intent = Intent(this, act)
         startActivity(intent)
-
+        finish()
     }
 
 }

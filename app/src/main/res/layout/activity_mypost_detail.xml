@@ -212,18 +212,20 @@
         android:layout_height="0.5dp"
         app:layout_constraintGuide_percent="0.585"
         android:orientation="horizontal"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Explanation_b"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.674"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Explanation_e"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.597"
-        android:orientation="vertical"/>
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/view3_b"
         android:layout_width="match_parent"

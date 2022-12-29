@@ -116,6 +116,7 @@ class FindPasswordActivity : BaseActivity<ActivityFindPasswordBinding>(R.layout.
         shortToast("비밀번호 변경완료")
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
+        auth.signOut()
         finish()
     }
 

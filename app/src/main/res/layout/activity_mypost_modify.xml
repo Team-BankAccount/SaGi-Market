@@ -178,12 +178,13 @@
         android:layout_height="0.5dp"
         app:layout_constraintGuide_percent="0.4916"
         android:orientation="horizontal"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/title_t"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.513"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/title_b"
         android:layout_width="match_parent"
@@ -212,18 +213,20 @@
         android:layout_height="0.5dp"
         app:layout_constraintGuide_percent="0.585"
         android:orientation="horizontal"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Explanation_b"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.674"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Explanation_e"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        app:layout_constraintGuide_percent="0.597"
-        android:orientation="vertical"/>
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.89" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/view3_b"
         android:layout_width="match_parent"
@@ -455,36 +458,36 @@
         app:layout_constraintBottom_toBottomOf="@id/view_b"
         android:background="@color/black"/>
 
-    <TextView
+    <EditText
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/profil_s"
         app:layout_constraintTop_toTopOf="@id/title_t"
         app:layout_constraintBottom_toBottomOf="@id/title_b"
-        app:layout_constraintEnd_toEndOf="@id/img_jj_e"
-        android:text="맛도리GSM"
+        app:layout_constraintEnd_toEndOf="@id/uprode_s"
+        android:hint="제목"
         android:textColor="@color/black"
-        android:textSize="22.5dp"/>
+        android:textSize="12sp"/>
 
-    <TextView
+    <EditText
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/txt_chat_e"
         app:layout_constraintTop_toTopOf="@id/title_t"
         app:layout_constraintBottom_toBottomOf="@id/title_b"
         app:layout_constraintEnd_toEndOf="@id/mypage_e"
-        android:text="1004원"
-        android:textSize="20dp"
+        android:hint="가격"
+        android:textSize="14sp"
         android:textColor="@color/black"/>
 
-    <TextView
+    <EditText
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/profil_s"
         app:layout_constraintTop_toTopOf="@id/Explanation_t"
         app:layout_constraintEnd_toEndOf="@id/Explanation_e"
         app:layout_constraintBottom_toBottomOf="@id/Explanation_b"
-        android:text="게시물 설명란"
+        android:hint="게시물 설명란"
         android:textColor="@color/black"
         android:textSize="15dp"/>
 

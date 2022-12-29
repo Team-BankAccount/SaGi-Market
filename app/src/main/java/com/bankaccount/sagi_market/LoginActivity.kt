@@ -4,8 +4,10 @@ import android.content.Intent
 import android.view.View
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
+import com.bankaccount.sagi_market.preference.MySharedPreferences
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
@@ -31,10 +33,16 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
     }
 
     private fun login(email: String, password: String){
+        val userId = email.split("@")[0]
+        val currentUserDB = Firebase.database.getReference("user").child(userId)
+        val name = currentUserDB.child("name").toString()
 
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
+                    MySharedPreferences.setUserEmail(this, email)
+                    MySharedPreferences.setUserPass(this, password)
+                    MySharedPreferences.setUserName(this, name)
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
                     finish()

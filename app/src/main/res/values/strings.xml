@@ -19,4 +19,8 @@
     <string name="btn_review">후기작성하기</string>
     <string name="btn_modify">수정하기</string>
     <string name="btn_finish">완료</string>
+    <string name="review">후기 작성하기</string>
+    <string name="edit_review">후기를 작성해주세요</string>
+    <string name="satisfaction_1">님과의 거래는</string>
+    <string name="satisfaction_2">어떠셨나요?</string>
 </resources>

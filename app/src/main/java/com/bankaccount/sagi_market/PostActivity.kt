@@ -35,6 +35,7 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
 
             val firebaseKey = FirebaseRef.postRef.push().key.toString()
 
+
             FirebaseRef.postRef
                 .child(firebaseKey)
                 .setValue(PostModel(title,price,detail,uid,time))
@@ -44,18 +45,8 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
 
             finish()
         }
+
         binding.btnImg.setOnClickListener {
-            /*ActivityCompat.requestPermissions(this@PostActivity,
-                arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 1)
-            if (ContextCompat.checkSelfPermission(this@PostActivity.applicationContext,
-                    android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
-                startActivityForResult(gallery,100)
-
-            } else {
-                Toast.makeText(this,"갤러리 접근이 거부 되었습니다",Toast.LENGTH_SHORT).show()
-            }*/
-
             requestPermission()
         }
     }
@@ -65,6 +56,7 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
         val storage = Firebase.storage
         val storageRef = storage.reference
         val mountainsRef = storageRef.child(firebaseKey+".png")
+       // val mountainsRef = storage.child(firebaseKey+".png")
 
 
         val imageView = binding.btnImg
@@ -99,9 +91,10 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
         if(permissionCheck != PackageManager.PERMISSION_GRANTED){
 
             if(ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.READ_EXTERNAL_STORAGE)){
-
+                //설명 필요 (사용자가 요청을 거부한 적이 있음)
                 ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, PERMISSIONS_REQUEST_CODE )
             }else{
+                //설명 필요하지 않음
                 ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, PERMISSIONS_REQUEST_CODE )
             }
         }else{

@@ -56,7 +56,7 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
         val storage = Firebase.storage
         val storageRef = storage.reference
         val mountainsRef = storageRef.child(firebaseKey+".png")
-       // val mountainsRef = storage.child(firebaseKey+".png")
+
 
 
         val imageView = binding.btnImg

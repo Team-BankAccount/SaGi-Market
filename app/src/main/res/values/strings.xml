@@ -23,4 +23,5 @@
     <string name="edit_review">후기를 작성해주세요</string>
     <string name="satisfaction_1">님과의 거래는</string>
     <string name="satisfaction_2">어떠셨나요?</string>
+    <string name="transaction">나와의 거래후 남긴 후기에요</string>
 </resources>

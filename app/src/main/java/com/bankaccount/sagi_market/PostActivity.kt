@@ -44,6 +44,10 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
         binding.btnImg.setOnClickListener {
             requestPermission()
         }
+        binding.btnHome.setOnClickListener {
+            var intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun imgUpload(firebaseKey : String){

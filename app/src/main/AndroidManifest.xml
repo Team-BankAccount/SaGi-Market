@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bankaccount.sagi_market">
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,9 +13,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/sg"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/sg"
         android:supportsRtl="true"
         android:theme="@style/Theme.SaGiMarket"
         tools:targetApi="31">
@@ -40,7 +43,13 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+            android:name=".FindPasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
             android:exported="false" />
     </application>
 

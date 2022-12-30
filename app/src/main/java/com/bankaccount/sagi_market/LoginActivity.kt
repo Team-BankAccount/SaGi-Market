@@ -1,6 +1,7 @@
 package com.bankaccount.sagi_market
 
 import android.content.Intent
+import android.view.View
 import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
@@ -13,6 +14,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
     private lateinit var auth: FirebaseAuth
 
     override fun viewSetting() {
+        binding.login = this
 
         auth = Firebase.auth
 
@@ -30,6 +32,21 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
                     }
                 }
         }
+    }
+
+    fun onClickPageBtn(view: View){
+        lateinit var act: Class<*>
+        when(view.id) {
+            binding.tvRegister.id -> {
+                act = RegisterActivity::class.java
+            }
+            binding.tvFindPassword.id -> {
+                act = FindPasswordActivity::class.java
+            }
+        }
+        val intent = Intent(this, act)
+        startActivity(intent)
+
     }
 
 }

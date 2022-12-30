@@ -4,6 +4,11 @@ import post.PostAdapter
 import post.PostModel
 import util.FirebaseRef
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.bankaccount.sagi_market.R
+import android.widget.Button
+import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityMainBinding
 import android.util.Log

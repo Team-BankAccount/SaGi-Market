@@ -3,9 +3,7 @@ package com.bankaccount.sagi_market
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.Toast
-import com.bankaccount.sagi_market.LoginActivity
 import com.bankaccount.sagi_market.preference.MySharedPreferences
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -24,6 +22,9 @@ class SplashActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
+
+
+
     }
 
     private fun login(email: String, password: String){

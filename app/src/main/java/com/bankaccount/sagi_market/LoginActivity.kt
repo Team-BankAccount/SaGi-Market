@@ -13,15 +13,18 @@ import com.google.firebase.ktx.Firebase
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var email: String
+    private lateinit var password: String
 
     override fun viewSetting() {
         binding.login = this
 
         auth = Firebase.auth
-        val email = binding.etEmail.text.toString()
-        val password = binding.etPassword.text.toString()
+
 
         binding.btnLogin.setOnClickListener {
+            email = binding.etEmail.text.toString()
+            password = binding.etPassword.text.toString()
             if(email.isEmpty()) {
                 shortToast("이메일을 입력해 주세요")
             } else if(password.isEmpty()){

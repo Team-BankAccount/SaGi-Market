@@ -1,6 +1,7 @@
 package com.bankaccount.sagi_market
 
 import android.content.Intent
+import android.util.Log
 import android.view.View
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityLoginBinding
@@ -40,12 +41,15 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
         val currentUserDB = Firebase.database.getReference("user").child(userId)
         val name = currentUserDB.child("name").toString()
 
+
+
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     MySharedPreferences.setUserEmail(this, email)
                     MySharedPreferences.setUserPass(this, password)
                     MySharedPreferences.setUserName(this, name)
+                    isFirstLogin(userId)
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
                     finish()
@@ -53,6 +57,12 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
                     shortToast("로그인에 실패했습니다.")
                 }
             }
+    }
+
+    private fun isFirstLogin(userId: String){
+        val currentUserDB = Firebase.database.getReference("user").child(userId)
+        val uid = auth.currentUser!!.uid
+        currentUserDB.child("uid").setValue(uid)
     }
 
 

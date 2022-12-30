@@ -1,7 +1,6 @@
-package Util
+package util
 
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.coroutines.currentCoroutineContext
 import java.text.SimpleDateFormat
 import java.util.*
 

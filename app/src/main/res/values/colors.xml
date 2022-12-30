@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="SgBlue">#FF002B5C</color>
+    <color name="send_message">#6d6fa3</color>
+    <color name="btn_finish">#0080ff</color>
 </resources>

@@ -1,6 +1,4 @@
-package Post
-
-import android.icu.text.CaseMap.Title
+package post
 
 data class PostModel (
     val title : String = "",

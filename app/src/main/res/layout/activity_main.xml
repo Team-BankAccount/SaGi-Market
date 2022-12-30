@@ -453,14 +453,14 @@
             android:textColor="@color/black"
             android:textSize="20dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <ListView
+            android:id="@+id/listView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="#002c5c"
             app:layout_constraintBottom_toBottomOf="@id/rccr_b"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/rccr_t" />
+            app:layout_constraintTop_toTopOf="@id/rccr_t"/>
 
         <View
             android:layout_width="0dp"
@@ -490,6 +490,7 @@
             android:background="@drawable/jjimicon"/>
 
         <ImageView
+            android:id="@+id/btn_post"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="@id/uprode_s"

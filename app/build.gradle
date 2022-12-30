@@ -71,4 +71,11 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation 'androidx.core:core-splashscreen:1.0.0'
+    implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    // Add the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database-ktx'
 }

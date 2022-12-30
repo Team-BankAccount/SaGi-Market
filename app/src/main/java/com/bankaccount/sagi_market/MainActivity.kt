@@ -1,8 +1,8 @@
 package com.bankaccount.sagi_market
 
-import Post.PostAdapter
-import Post.PostModel
-import Util.FirebaseRef
+import post.PostAdapter
+import post.PostModel
+import util.FirebaseRef
 import android.content.Intent
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityMainBinding

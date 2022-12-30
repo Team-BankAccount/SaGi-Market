@@ -1,4 +1,4 @@
-package Post
+package post
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,16 +6,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
-import androidx.recyclerview.widget.RecyclerView.inflate
-import com.bankaccount.sagi_market.MainActivity
 import com.bankaccount.sagi_market.R
-import com.bumptech.glide.Glide
-import com.google.firebase.database.core.Context
-import kotlinx.coroutines.NonDisposableHandle.parent
-
 
 
 class PostAdapter(private val postList : MutableList<PostModel>) : BaseAdapter(){

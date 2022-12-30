@@ -23,6 +23,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
 
     val postDataList = mutableListOf<PostModel>()
+    val postKeyList = mutableListOf<String>()
+
     private val TAG = MainActivity::class.java.simpleName
     private lateinit var postadapter : PostAdapter
 
@@ -39,9 +41,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
         firebaseGetData()
 
-
-
-
+        binding.listView.setOnItemClickListener { adapterView, view, i, l ->
+            val intent = Intent(this,PostDetailActivity::class.java)
+            intent.putExtra("key",postKeyList[i])
+            startActivity(intent)
+        }
     }
     private fun firebaseGetData(){
         val postListener = object : ValueEventListener {
@@ -53,7 +57,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
                     Log.d(TAG,dataModel.toString())
                     val post = dataModel.getValue(PostModel::class.java)
                     postDataList.add(post!!)
+                    postKeyList.add(dataModel.key.toString())
                 }
+                postDataList.reverse()
+                postKeyList.reverse()
                 postadapter.notifyDataSetChanged()
                 Log.d(TAG,postDataList.toString())
             }
@@ -64,21 +71,4 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         }
         FirebaseRef.postRef.addValueEventListener(postListener)
     }
-    fun firebaseGetImgData(key : String){
-
-        val storageReference = Firebase.storage.reference.child(key+"png")
-
-        val imageView = findViewById<ImageView>(R.id.img_post)
-
-        storageReference.downloadUrl.addOnCompleteListener(OnCompleteListener {task ->
-            if(task.isSuccessful) {
-                Glide.with(this /* context */)
-                    .load(task.result)
-                    .into(imageView)
-            }else{
-
-            }
-        })
-    }
-
 }

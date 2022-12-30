@@ -47,6 +47,7 @@ class PostAdapter(private val postList : MutableList<PostModel>) : BaseAdapter()
         title!!.text = postList[p0].title
         price!!.text = postList[p0].price+"₩"
         time!!.text = postList[p0].time
+
         //Log.d(this,postList[p0])
         /*val resourceId = context.resources.getIdentifier(postList[p0], "drawable", context.packageName)
         img!!.setImageResource(resourceId)*/

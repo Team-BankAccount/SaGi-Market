@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.bankaccount.sagi_market"
-        minSdk 20
+        minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -68,8 +68,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage-ktx'
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation 'androidx.core:core-splashscreen:1.0.0'
     implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     // Import the BoM for the Firebase platform

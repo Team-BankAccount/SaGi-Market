@@ -88,12 +88,15 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding>(R.layout.activity
         val userEmail = mutableMapOf<String, Any>()
         val userName = mutableMapOf<String, Any>()
         val userPassword = mutableMapOf<String, Any>()
+        val userUid = mutableMapOf<String, Any>()
         userEmail["email"] = email
         userName["name"] = name
         userPassword["password"] = password
+        userUid["uid"] = "baseUid"
         currentUserDB.child(emailId).updateChildren(userEmail)
         currentUserDB.child(emailId).updateChildren(userName)
         currentUserDB.child(emailId).updateChildren(userPassword)
+        currentUserDB.child(emailId).updateChildren(userUid)
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()

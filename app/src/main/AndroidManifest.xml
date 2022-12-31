@@ -40,9 +40,6 @@
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".PostDetailActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
@@ -51,6 +48,9 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:exported="true" />
         <activity
             android:name=".ChatActivity"
             android:exported="false" />

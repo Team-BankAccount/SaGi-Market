@@ -493,6 +493,7 @@
             android:textColor="@color/black" />
 
         <ImageView
+            android:id="@+id/btn_h"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="@id/img_jjim2_s"

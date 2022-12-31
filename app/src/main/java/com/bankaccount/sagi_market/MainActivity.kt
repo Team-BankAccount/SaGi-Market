@@ -4,22 +4,12 @@ import post.PostAdapter
 import post.PostModel
 import util.FirebaseRef
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.bankaccount.sagi_market.R
-import android.widget.Button
-import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityMainBinding
 import android.util.Log
-import android.widget.ImageView
-import com.bumptech.glide.Glide
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
 
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
@@ -47,7 +37,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         firebaseGetData()
 
         binding.listView.setOnItemClickListener { adapterView, view, i, l ->
-            val intent = Intent(this,PostDetailActivity::class.java)
+            val intent = Intent(this, PostDetailActivity::class.java)
             intent.putExtra("key",postKeyList[i])
             startActivity(intent)
         }
@@ -60,6 +50,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
                 for(dataModel in snapshot.children){
 
                     Log.d(TAG,dataModel.toString())
+
                     val post = dataModel.getValue(PostModel::class.java)
                     postDataList.add(post!!)
                     postKeyList.add(dataModel.key.toString())

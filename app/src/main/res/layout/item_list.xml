@@ -135,7 +135,8 @@
         app:layout_constraintBottom_toBottomOf="@id/uprode_title_b"
         app:layout_constraintEnd_toEndOf="@id/uprode_title_e"
         android:text="게시글 제목"
-        android:textSize="12.5dp" />
+        android:textSize="12.5dp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/text_price"
@@ -146,7 +147,8 @@
         app:layout_constraintEnd_toEndOf="@id/won_e"
         app:layout_constraintBottom_toBottomOf="@id/won_b"
         android:text="1004원"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        android:textColor="@color/black"/>
 
     <TextView
             android:id="@+id/text_user"
@@ -157,7 +159,8 @@
     app:layout_constraintBottom_toBottomOf="@id/name_b"
     app:layout_constraintEnd_toEndOf="@id/name_e"
     android:text="송정윤"
-    android:textSize="9dp" />
+    android:textSize="9dp"
+    android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/text_time"
@@ -168,6 +171,7 @@
         app:layout_constraintBottom_toBottomOf="@id/name_b"
         app:layout_constraintEnd_toEndOf="@id/time_e"
         android:text="10분전"
-        android:textSize="9dp" />
+        android:textSize="9dp"
+        android:textColor="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

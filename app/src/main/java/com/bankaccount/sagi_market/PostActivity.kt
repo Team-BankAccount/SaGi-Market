@@ -19,6 +19,8 @@ import java.io.ByteArrayOutputStream
 
 class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
 
+    var imgcheck = false
+
     override fun viewSetting() {
 
         binding.btnSuccess.setOnClickListener{
@@ -36,7 +38,10 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
                 .setValue(PostModel(title,price,detail,uid,time))
             Toast.makeText(this,"게시글 업로드 완료",Toast.LENGTH_SHORT).show()
 
-            imgUpload(firebaseKey)
+            if(imgcheck == true) {
+                imgUpload(firebaseKey)
+            }
+
 
             finish()
         }
@@ -97,6 +102,7 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
                 ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, PERMISSIONS_REQUEST_CODE )
             }
         }else{
+            imgcheck = true
             val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
             startActivityForResult(gallery,1004)            //권한 허용
         }
@@ -108,6 +114,7 @@ class PostActivity : BaseActivity<ActivityPostBinding>(R.layout.activity_post) {
         when(requestCode){
             PERMISSIONS_REQUEST_CODE -> {
                 if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    imgcheck = true
                     val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
                     startActivityForResult(gallery,1004)
                     //권한 허용

@@ -42,7 +42,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
             startActivity(intent)
         }
     }
-    private fun firebaseGetData(){
+     private fun firebaseGetData(){
         val postListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 postDataList.clear()

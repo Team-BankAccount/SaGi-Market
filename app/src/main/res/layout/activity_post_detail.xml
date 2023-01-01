@@ -133,8 +133,8 @@
             android:id="@+id/name_s"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.189"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.23" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/name_e"
@@ -144,59 +144,59 @@
             android:orientation="vertical" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_jjim_t"
+            android:id="@+id/modify_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.423"
+            app:layout_constraintGuide_percent="0.428"
             android:orientation="horizontal" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_jjim2_b"
+            android:id="@+id/modify_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.466"
+            app:layout_constraintGuide_percent="0.46"
             android:orientation="horizontal" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_jjim2_s"
+            android:id="@+id/modify_s"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.692"
+            app:layout_constraintGuide_percent="0.473"
             android:orientation="vertical" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_jjim2_e"
+            android:id="@+id/modify_e"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.783"
+            app:layout_constraintGuide_percent="0.65"
             android:orientation="vertical" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_chatting_t"
+            android:id="@+id/spinner_t"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.424"
+            app:layout_constraintGuide_percent="0.425"
             android:orientation="horizontal" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_chatting_b"
+            android:id="@+id/spinner_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.463"
+            app:layout_constraintGuide_percent="0.464"
             android:orientation="horizontal" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_chatting_s"
+            android:id="@+id/spinner_s"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.845"
+            app:layout_constraintGuide_percent="0.688"
             android:orientation="vertical" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/img_chatting_e"
+            android:id="@+id/spinner_e"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.936"
+            app:layout_constraintGuide_percent="0.964"
             android:orientation="vertical" />
 
         <androidx.constraintlayout.widget.Guideline
@@ -257,15 +257,15 @@
             android:id="@+id/Explanation_b"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.674"
-            android:orientation="horizontal" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/Explanation_e"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            app:layout_constraintGuide_percent="0.597"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/view3_b"
@@ -493,24 +493,27 @@
             android:textSize="15sp"
             android:textColor="@color/black" />
 
-        <ImageView
-            android:id="@+id/btn_h"
+        <Button
+            android:id="@+id/btn_modify"
+            android:visibility="invisible"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintStart_toStartOf="@id/img_jjim2_s"
-            app:layout_constraintTop_toTopOf="@id/img_jjim_t"
-            app:layout_constraintEnd_toEndOf="@id/img_jjim2_e"
-            app:layout_constraintBottom_toBottomOf="@id/img_jjim2_b"
-            android:background="@drawable/jjimicon" />
+            app:layout_constraintStart_toStartOf="@id/modify_s"
+            app:layout_constraintTop_toTopOf="@id/modify_t"
+            app:layout_constraintBottom_toBottomOf="@id/modify_b"
+            app:layout_constraintEnd_toEndOf="@id/modify_e"
+            android:background="@drawable/round_button3"
+            android:text="@string/btn_modify"
+            android:textSize="12sp" />
 
-        <ImageView
+        <Spinner
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintStart_toStartOf="@id/img_chatting_s"
-            app:layout_constraintTop_toTopOf="@id/img_chatting_t"
-            app:layout_constraintEnd_toEndOf="@id/img_chatting_e"
-            app:layout_constraintBottom_toBottomOf="@id/img_chatting_b"
-            android:background="@drawable/chattingicon" />
+            app:layout_constraintStart_toStartOf="@id/spinner_s"
+            app:layout_constraintTop_toTopOf="@id/spinner_t"
+            app:layout_constraintBottom_toBottomOf="@id/spinner_b"
+            app:layout_constraintEnd_toEndOf="@id/spinner_e"
+            android:background="@drawable/spinner_background" />
 
         <View
             android:layout_width="0dp"
@@ -519,7 +522,7 @@
             app:layout_constraintTop_toTopOf="@id/view_t"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/view_b"
-            android:background="@color/white" />
+            android:background="@color/black" />
 
         <TextView
             android:id="@+id/text_title"

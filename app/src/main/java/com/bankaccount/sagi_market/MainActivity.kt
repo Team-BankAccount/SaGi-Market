@@ -4,11 +4,6 @@ import post.PostAdapter
 import post.PostModel
 import util.FirebaseRef
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.bankaccount.sagi_market.R
-import android.widget.Button
-import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityMainBinding
 import android.util.Log
@@ -19,8 +14,6 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
 
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
@@ -29,6 +22,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
 
     val postDataList = mutableListOf<PostModel>()
+    val postKeyList = mutableListOf<String>()
+
     private val TAG = MainActivity::class.java.simpleName
     private lateinit var postadapter : PostAdapter
 
@@ -51,8 +46,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
             startActivity(Intent(this, MyPageActivity::class.java))
         }
 
+        binding.listView.setOnItemClickListener { adapterView, view, i, l ->
+            val intent = Intent(this, PostDetailActivity::class.java)
+            intent.putExtra("key",postKeyList[i])
+            startActivity(intent)
+        }
     }
-    private fun firebaseGetData(){
+     private fun firebaseGetData(){
         val postListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 postDataList.clear()
@@ -60,9 +60,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
                 for(dataModel in snapshot.children){
 
                     Log.d(TAG,dataModel.toString())
+
                     val post = dataModel.getValue(PostModel::class.java)
                     postDataList.add(post!!)
+                    postKeyList.add(dataModel.key.toString())
                 }
+                postDataList.reverse()
+                postKeyList.reverse()
                 postadapter.notifyDataSetChanged()
                 Log.d(TAG,postDataList.toString())
             }
@@ -100,5 +104,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         val intent = Intent(this, act)
         startActivity(intent)
     }
+
 
 }

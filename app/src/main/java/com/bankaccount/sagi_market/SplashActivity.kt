@@ -13,6 +13,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+
         if(MySharedPreferences.getUserEmail(this).isNullOrBlank()||MySharedPreferences.getUserPass(this).isNullOrBlank()){
             startActivity(Intent(this, LoginActivity::class.java))
             finish()

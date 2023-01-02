@@ -269,7 +269,7 @@
                     android:id="@+id/title_e"
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    app:layout_constraintGuide_percent="0.309"
+                    app:layout_constraintGuide_percent="0.54"
                     android:orientation="vertical"/>
 
                 <androidx.constraintlayout.widget.Guideline
@@ -730,6 +730,8 @@
                     app:layout_constraintTop_toTopOf="@id/Ex_uprode_t"
                     app:layout_constraintEnd_toEndOf="@id/Ex_uprode_e"
                     app:layout_constraintBottom_toBottomOf="@id/Ex_uprode_b"
+                    android:background="#ffffff"
+                    android:gravity="top"
                     android:hint="물품에 대한 설명을 적어주세요."
                     android:textSize="14sp"/>
 

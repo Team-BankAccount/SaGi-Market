@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="intent"
+            type="com.bankaccount.sagi_market.MainActivity" />
 
     </data>
 
@@ -472,6 +475,7 @@
             android:layout_marginTop="655dp" />
 
         <ImageView
+            android:id="@+id/btn_home"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="@id/home_s"
@@ -481,6 +485,7 @@
             android:background="@drawable/homeicon"/>
 
         <ImageView
+            android:id="@+id/btn_jjim"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="@id/jjim_s"
@@ -500,6 +505,7 @@
             android:background="@drawable/uprodeicon"/>
 
         <ImageView
+            android:id="@+id/btn_chat"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="@id/chat_s"
@@ -509,6 +515,7 @@
             android:background="@drawable/chattingicon"/>
 
         <ImageView
+            android:id="@+id/btn_my"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="@id/mypage_s"

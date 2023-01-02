@@ -12,6 +12,7 @@ import android.widget.Toast
 import com.bankaccount.sagi_market.base.BaseActivity
 import com.bankaccount.sagi_market.databinding.ActivityMainBinding
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.google.android.gms.tasks.OnCompleteListener
@@ -32,6 +33,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     private lateinit var postadapter : PostAdapter
 
     override fun viewSetting() {
+        binding.intent = this
         //println("안"+a.toString())
 
         binding.btnPost.setOnClickListener {
@@ -45,7 +47,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         firebaseGetData()
 
 
-
+        binding.btnMy.setOnClickListener {
+            startActivity(Intent(this, MyPageActivity::class.java))
+        }
 
     }
     private fun firebaseGetData(){
@@ -84,6 +88,17 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
             }
         })
+    }
+
+    fun onClickPageBtn(view: View){
+        lateinit var act: Class<*>
+        when(view.id){
+            binding.btnMy.id -> {
+                act = MyPageActivity::class.java
+            }
+        }
+        val intent = Intent(this, act)
+        startActivity(intent)
     }
 
 }

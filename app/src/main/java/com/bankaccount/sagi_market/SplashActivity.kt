@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
         }
         else {
             login(MySharedPreferences.getUserEmail(this), MySharedPreferences.getUserPass(this))
-            startActivity(Intent(this, MyPageActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
 

@@ -18,11 +18,12 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import post.MyPostModel
 import post.PostModel
 
 class HaveSellActivity : BaseActivity<ActivityHaveSalepageBinding>(R.layout.activity_have_salepage) {
 
-    private var post: ArrayList<PostModel> = arrayListOf()
+    private var post: ArrayList<MyPostModel> = arrayListOf()
     val myUid = Firebase.auth.currentUser?.uid.toString()
 
     override fun viewSetting() {
@@ -33,14 +34,14 @@ class HaveSellActivity : BaseActivity<ActivityHaveSalepageBinding>(R.layout.acti
 
 
     inner class MyPostAdapter : RecyclerView.Adapter<MyPostAdapter.CustomViewHolder>(){
-        var dataList = mutableListOf<PostModel>()
+        var dataList = mutableListOf<MyPostModel>()
 
         init {
             FirebaseDatabase.getInstance().reference.child("post").addValueEventListener(object : ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                     post.clear()
                     for(data in snapshot.children){
-                        val item = data.getValue<PostModel>()
+                        val item = data.getValue<MyPostModel>()
                         if(item?.uid.toString() != myUid){ continue }
                         post.add(item!!)
                     }
@@ -59,7 +60,7 @@ class HaveSellActivity : BaseActivity<ActivityHaveSalepageBinding>(R.layout.acti
         }
 
         inner class CustomViewHolder(private val binding: ItemLlistSalepageBinding): RecyclerView.ViewHolder(binding.root){
-            fun bind(postData: PostModel){
+            fun bind(postData: MyPostModel){
                 binding.tvPrice.text =postData.price
                 binding.tvDate.text = postData.time
                 binding.tvTitle.text = postData.title
